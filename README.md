@@ -7,7 +7,7 @@ This project highlights available properties, features, and inquiry options for 
 For inquiries and sales, please contact:
 
 **Rome Mendoza**  
-Property Consultant | DMCI
+Property Consultant | DMCI 
 📧 Email: [add email here]  
 📱 Phone: +639171431802 
 
