@@ -9,15 +9,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 80px;
     background-color: #002D62;
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar-left {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
     flex: 1;
     justify-content: flex-start;
 }
@@ -27,11 +29,11 @@ body {
     flex-direction: column;
     align-items: center;
     flex: 0 0 auto;
-    margin: 0 20px;
+    margin: 0 60px;
 }
 
 .navbar-center img {
-    height: 100px;
+    height: 80px;
     width: auto;
     object-fit: contain;
 }
@@ -90,17 +92,35 @@ body {
 }
 
 /* Responsive styles */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .navbar {
-        padding: 15px 30px;
+        padding: 20px 60px;
     }
     
     .navbar-left {
-        gap: 20px;
+        gap: 60px;
+    }
+    
+    .navbar-center {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 40px;
+    }
+    
+    .navbar-left {
+        gap: 40px;
     }
     
     .navbar-right {
-        gap: 20px;
+        gap: 30px;
+    }
+    
+    .navbar-center {
+        margin: 0 30px;
     }
 }
 
@@ -110,13 +130,16 @@ body {
         justify-content: space-between;
     }
     
-    .navbar-left .nav-link:not(:first-child),
-    .navbar-right .nav-link:not(.icon-group *) {
+    .navbar-left .nav-link:not(:first-child) {
+        display: none;
+    }
+    
+    .navbar-right .nav-link:not(.icon-group *):not(.hamburger-menu *) {
         display: none;
     }
     
     .navbar-center {
-        margin: 0 10px;
+        margin: 0 15px;
     }
     
     .navbar-center img {
@@ -125,6 +148,14 @@ body {
     
     .hamburger-menu {
         display: flex;
+    }
+    
+    .navbar-left {
+        gap: 20px;
+    }
+    
+    .navbar-right {
+        gap: 20px;
     }
 }
 
@@ -143,5 +174,9 @@ body {
     
     .navbar-center img {
         height: 50px;
+    }
+    
+    .navbar-center {
+        margin: 0 10px;
     }
 }
