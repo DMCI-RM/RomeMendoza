@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMCI - Rome Medoza</title>
+    <title>DMCI - Rome Mendoza</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -18,18 +18,18 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 50px; /* Adjusted padding for top/bottom spacing */
+            padding: 20px 50px;
             background-color: #002D62;
         }
         .navbar-left {
             display: flex;
             align-items: center;
-            gap: 150px; /* Increased gap for wide spacing */
+            gap: 150px;
         }
         .navbar-right {
             display: flex;
             align-items: center;
-            gap: 150px; /* Increased gap for wide spacing */
+            gap: 150px;
         }
         .navbar-center {
             position: absolute;
@@ -52,11 +52,21 @@
         .nav-link:hover {
             color: #d1b4a8;
         }
+        .icon {
+            stroke: #ffffff;
+            width: 24px;
+            height: 24px;
+        }
+        .icon-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
         .hamburger-menu {
             display: flex;
             flex-direction: column;
             cursor: pointer;
-            margin-left: 150px; /* Increased margin for wide spacing */
+            margin-left: 150px;
         }
         .hamburger-menu .bar {
             width: 25px;
@@ -96,7 +106,15 @@
         </div>
         <div class="navbar-right">
             <a href="#" class="nav-link">The Community</a>
-            <a href="#" class="nav-link">Availability</a>
+            <div class="icon-group">
+                <a href="#" class="nav-link">Availability</a>
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-phone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12" y2="18"></line></svg>
+                </a>
+                <a href="#" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.82c-.85 1.76-2.1 3.25-3.69 4.31-1.59 1.05-3.48 1.63-5.46 1.63-2 0-3.89-.58-5.48-1.63s-2.84-2.55-3.69-4.31a8.38 8.38 0 0 1-.9-3.82c0-4.55 4.03-8.25 9-8.25s9 3.7 9 8.25z"></path></svg>
+                </a>
+            </div>
             <div class="hamburger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
